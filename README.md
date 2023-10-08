@@ -7,7 +7,7 @@ xova's.scripts
 
 #### __Loader Scripts__
 ```lua
-print("Test")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SixZensED/xova-s.scripts/main/Init/Loader.lua"))()
 ```
 
 [DC]: <https://discord.com/users/692757513631825940>
