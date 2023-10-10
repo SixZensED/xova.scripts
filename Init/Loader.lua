@@ -1,6 +1,7 @@
 gameid = {
 	[4777817887] = "https://raw.githubusercontent.com/SixZensED/xova-s.scripts/main/Init/ID/4777817887.lua",
-	[4730278139] = "https://raw.githubusercontent.com/SixZensED/xova-s.scripts/main/Init/ID/4730278139.lua"
+	[4730278139] = "https://raw.githubusercontent.com/SixZensED/xova-s.scripts/main/Init/ID/4730278139.lua",
+	[4908792642] = "https://raw.githubusercontent.com/SixZensED/xova-s.scripts/main/Init/ID/4908792642.lua",
 }
 
 xpcall(function()
