@@ -1,0 +1,17 @@
+.1_2 { 
+	overflow:hidden;
+}.e1_2 { 
+	background-color:rgba(255, 255, 255, 1);
+	width:1800px;
+	height:3600px;
+	position:absolute;
+}.e1_3 { 
+	width:1800px;
+	height:3600px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background-image:url(images/xova_design_1.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
