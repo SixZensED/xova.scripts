@@ -1,12 +1,46 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        <center>
-            <h2>
-                <?php 
-            echo "This is PHP code inside html"
-            ?>
-            </h2>
-        </center>
-    </body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Raw Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        #content {
+            padding: 20px;
+        }
+
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <pre id="rawContent"></pre>
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        fetch("http://85.203.4.49:19191/apidata?key="+urlParams.get("data"))
+            .then((response) => response.text())
+            .then((data) => {
+                document.getElementById("rawContent").innerText = data;
+            })
+            .catch((error) => {
+                console.error("Error fetching file:", error);
+                document.getElementById("rawContent").innerText =
+                    "Error fetching file. Make sure the URL is correct.";
+            });
+    </script>
+</body>
+
 </html>
