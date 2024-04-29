@@ -30,8 +30,8 @@
     <script>
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
-		var proxyUrl = "http://85.203.4.49:19191/apidata?key="+urlParams.get("data");
-        fetch(proxyUrl)
+		const url = 'https://cors-anywhere.herokuapp.com/' + ("http://85.203.4.49:19191/apidata?key="+urlParams.get("data"));
+        fetch(url)
             .then((response) => response.text())
             .then((data) => {
                 document.getElementById("rawContent").innerText = data;
