@@ -30,7 +30,7 @@
     <script>
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
-		const url = 'http://85.203.4.49:19191/proxy?url=' + ("http://85.203.4.49:19191/apidata?key="+urlParams.get("data"));
+		const url = ("http://85.203.4.49:19191/apidata?key="+urlParams.get("data"));
         fetch(url)
             .then((response) => response.text())
             .then((data) => {
