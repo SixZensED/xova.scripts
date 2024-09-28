@@ -158,7 +158,7 @@ boost.booster = function()
 			["FStringImmersiveAdsUniverseWhitelist"] = "0",
 			["FFlagAddGameInstanceIdToSessionTracking"] = "False",
 			["FFlagTrackPlaceIdForCrashEnabled"] = "False",
-			["DFIntTaskSchedulerTargetFps"] = "1",
+			["DFIntTaskSchedulerTargetFps"] = "999",
 		}
 
 		local function m(z)
